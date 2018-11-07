@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224921937F4B00EAC698 /* AppDelegate.m */; };
+		7917224D21937F4B00EAC698 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224C21937F4B00EAC698 /* FirstViewController.m */; };
+		7917225021937F4B00EAC698 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224F21937F4B00EAC698 /* SecondViewController.m */; };
+		7917225321937F4B00EAC698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917225121937F4B00EAC698 /* Main.storyboard */; };
+		7917225521937F4E00EAC698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917225421937F4E00EAC698 /* Assets.xcassets */; };
+		7917225821937F4E00EAC698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917225621937F4E00EAC698 /* LaunchScreen.storyboard */; };
+		7917225B21937F4E00EAC698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917225A21937F4E00EAC698 /* main.m */; };
+		7917226521937F4E00EAC698 /* TheBankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917226421937F4E00EAC698 /* TheBankTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7917226121937F4E00EAC698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7917223D21937F4B00EAC698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7917224421937F4B00EAC698;
+			remoteInfo = TheBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7917224521937F4B00EAC698 /* TheBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917224821937F4B00EAC698 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7917224921937F4B00EAC698 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7917224B21937F4B00EAC698 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		7917224C21937F4B00EAC698 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		7917224E21937F4B00EAC698 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7917224F21937F4B00EAC698 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7917225221937F4B00EAC698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7917225421937F4E00EAC698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7917225721937F4E00EAC698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7917225921937F4E00EAC698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7917225A21937F4E00EAC698 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7917226021937F4E00EAC698 /* TheBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917226421937F4E00EAC698 /* TheBankTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheBankTests.m; sourceTree = "<group>"; };
+		7917226621937F4E00EAC698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7917224221937F4B00EAC698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917225D21937F4E00EAC698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7917223C21937F4B00EAC698 = {
+			isa = PBXGroup;
+			children = (
+				7917224721937F4B00EAC698 /* TheBank */,
+				7917226321937F4E00EAC698 /* TheBankTests */,
+				7917224621937F4B00EAC698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7917224621937F4B00EAC698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7917224521937F4B00EAC698 /* TheBank.app */,
+				7917226021937F4E00EAC698 /* TheBankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7917224721937F4B00EAC698 /* TheBank */ = {
+			isa = PBXGroup;
+			children = (
+				7917224821937F4B00EAC698 /* AppDelegate.h */,
+				7917224921937F4B00EAC698 /* AppDelegate.m */,
+				7917224B21937F4B00EAC698 /* FirstViewController.h */,
+				7917224C21937F4B00EAC698 /* FirstViewController.m */,
+				7917224E21937F4B00EAC698 /* SecondViewController.h */,
+				7917224F21937F4B00EAC698 /* SecondViewController.m */,
+				7917225121937F4B00EAC698 /* Main.storyboard */,
+				7917225421937F4E00EAC698 /* Assets.xcassets */,
+				7917225621937F4E00EAC698 /* LaunchScreen.storyboard */,
+				7917225921937F4E00EAC698 /* Info.plist */,
+				7917225A21937F4E00EAC698 /* main.m */,
+			);
+			path = TheBank;
+			sourceTree = "<group>";
+		};
+		7917226321937F4E00EAC698 /* TheBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				7917226421937F4E00EAC698 /* TheBankTests.m */,
+				7917226621937F4E00EAC698 /* Info.plist */,
+			);
+			path = TheBankTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7917224421937F4B00EAC698 /* TheBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7917226921937F4E00EAC698 /* Build configuration list for PBXNativeTarget "TheBank" */;
+			buildPhases = (
+				7917224121937F4B00EAC698 /* Sources */,
+				7917224221937F4B00EAC698 /* Frameworks */,
+				7917224321937F4B00EAC698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheBank;
+			productName = TheBank;
+			productReference = 7917224521937F4B00EAC698 /* TheBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7917225F21937F4E00EAC698 /* TheBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7917226C21937F4E00EAC698 /* Build configuration list for PBXNativeTarget "TheBankTests" */;
+			buildPhases = (
+				7917225C21937F4E00EAC698 /* Sources */,
+				7917225D21937F4E00EAC698 /* Frameworks */,
+				7917225E21937F4E00EAC698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7917226221937F4E00EAC698 /* PBXTargetDependency */,
+			);
+			name = TheBankTests;
+			productName = TheBankTests;
+			productReference = 7917226021937F4E00EAC698 /* TheBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7917223D21937F4B00EAC698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = DeBunk;
+				TargetAttributes = {
+					7917224421937F4B00EAC698 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7917225F21937F4E00EAC698 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7917224421937F4B00EAC698;
+					};
+				};
+			};
+			buildConfigurationList = 7917224021937F4B00EAC698 /* Build configuration list for PBXProject "TheBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7917223C21937F4B00EAC698;
+			productRefGroup = 7917224621937F4B00EAC698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7917224421937F4B00EAC698 /* TheBank */,
+				7917225F21937F4E00EAC698 /* TheBankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7917224321937F4B00EAC698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917225821937F4E00EAC698 /* LaunchScreen.storyboard in Resources */,
+				7917225521937F4E00EAC698 /* Assets.xcassets in Resources */,
+				7917225321937F4B00EAC698 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917225E21937F4E00EAC698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7917224121937F4B00EAC698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917225021937F4B00EAC698 /* SecondViewController.m in Sources */,
+				7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */,
+				7917225B21937F4E00EAC698 /* main.m in Sources */,
+				7917224D21937F4B00EAC698 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917225C21937F4E00EAC698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917226521937F4E00EAC698 /* TheBankTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7917226221937F4E00EAC698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7917224421937F4B00EAC698 /* TheBank */;
+			targetProxy = 7917226121937F4E00EAC698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7917225121937F4B00EAC698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7917225221937F4B00EAC698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7917225621937F4E00EAC698 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7917225721937F4E00EAC698 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7917226721937F4E00EAC698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7917226821937F4E00EAC698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7917226A21937F4E00EAC698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7917226B21937F4E00EAC698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7917226D21937F4E00EAC698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBank.app/TheBank";
+			};
+			name = Debug;
+		};
+		7917226E21937F4E00EAC698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBank.app/TheBank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7917224021937F4B00EAC698 /* Build configuration list for PBXProject "TheBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917226721937F4E00EAC698 /* Debug */,
+				7917226821937F4E00EAC698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7917226921937F4E00EAC698 /* Build configuration list for PBXNativeTarget "TheBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917226A21937F4E00EAC698 /* Debug */,
+				7917226B21937F4E00EAC698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7917226C21937F4E00EAC698 /* Build configuration list for PBXNativeTarget "TheBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7917226D21937F4E00EAC698 /* Debug */,
+				7917226E21937F4E00EAC698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7917223D21937F4B00EAC698 /* Project object */;
+}
