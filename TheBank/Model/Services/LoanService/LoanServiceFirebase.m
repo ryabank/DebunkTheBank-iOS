@@ -19,6 +19,10 @@ static NSString * const kUpdateTimestampKey = @"updateTimestamp";
 static NSString * const kAmountKey = @"amount";
 static NSString * const kIdentifierKey = @"identifier";
 static NSString * const kStatusKey = @"status";
+static NSString * const kDescriptionKey = @"description";
+static NSString * const kNotesKey = @"notes";
+static NSString * const kDurationKey = @"duration";
+static NSString * const kLoanToAddressKey = @"loanToAddress";
 
 @interface LoanServiceFirebase()
 
@@ -110,7 +114,36 @@ static NSString * const kStatusKey = @"status";
 }
 
 - (void)createLoanEnquiry:(LoanEnquiry*)enquiry completion:(void(^)(BOOL success, NSError *error))completion {
+    if (self.userId == nil || enquiry == nil) {
+        if (completion) {
+            completion(NO, [NSError errorWithDomain:@"com.debunk.createLoan" code:-1 userInfo:nil]);
+        }
+        return;
+    }
     
+    // Create a new group dictionary data
+    NSString *enquiryUUID = [NSUUID UUID].UUIDString;
+    EnquiryStatus status = EnquiryStatusPending;
+    NSDictionary *enquiryDict = @{ kIdentifierKey : enquiryUUID,
+                                 kStatusKey : @(status),
+                                 kUpdateTimestampKey : FIRServerValue.timestamp,
+                                 kDescriptionKey : enquiry.enqueryDescription,
+                                 kNotesKey : enquiry.notes,
+                                 kAmountKey : enquiry.loanAmount,
+                                 kDurationKey : enquiry.blocksDuration
+//                                 kClientKey : @{self.userId : @(YES)},
+                                 };
+    
+    // Add group to groups data
+    [[[self.ref child:kLoansKey] child:enquiryUUID] setValue:enquiryDict];
+    
+    // Add group to user groups link data
+    NSString *clientLoansPath = [NSString stringWithFormat:@"%@/%@/%@", kClientsKey, self.userId, kLoansKey];
+    [[[self.ref child:clientLoansPath] child:enquiryUUID] setValue:@(YES)];
+    
+    if (completion) {
+        completion(YES, nil);
+    }
 }
 
 @end

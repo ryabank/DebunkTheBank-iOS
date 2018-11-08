@@ -11,7 +11,7 @@
 
 @protocol LoanEnquiriesViewProtocol <NSObject>
 
-- (void)displayLoanEnquiryDialog;
+- (void)displayLoanEnquiryForm;
 - (void)displayLoanEnquiries:(NSArray<LoanEnquiry*>*)enquiries;
 
 - (void)showEmptyState;

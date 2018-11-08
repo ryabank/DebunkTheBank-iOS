@@ -45,7 +45,7 @@
 }
 
 - (void)newEnquiry {
-    [self.view displayLoanEnquiryDialog];
+    [self.view displayLoanEnquiryForm];
 }
 
 - (void)createEnquiryForAddress:(NSString*)address amount:(NSString*)amount andDuration:(NSString*)duration {

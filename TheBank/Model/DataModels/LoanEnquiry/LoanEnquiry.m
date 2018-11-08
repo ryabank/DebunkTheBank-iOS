@@ -21,6 +21,9 @@
         case EnquiryStatusRejected:
             return @"Rejected";
             break;
+        case EnquiryStatusCancelled:
+            return @"Cancelled";
+            break;
         default:
             return @"Unknown";
             break;

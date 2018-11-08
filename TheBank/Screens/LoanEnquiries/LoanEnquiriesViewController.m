@@ -86,20 +86,8 @@
 
 #pragma mark LoanEnquiriesViewProtocol methods
 
-- (void)displayLoanEnquiryDialog {
-    UIAlertController *newEnquiryAlert = [UIAlertController alertControllerWithTitle:@"New Enquiry"
-                                                                             message:@""
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
+- (void)displayLoanEnquiryForm {
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *sendAction = [UIAlertAction actionWithTitle:@"Send" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    
-    [newEnquiryAlert addAction:cancelAction];
-    [newEnquiryAlert addAction:sendAction];
-    
-    [self presentViewController:newEnquiryAlert animated:YES completion:nil];
 }
 
 - (void)displayLoanEnquiries:(NSArray<LoanEnquiry *> *)enquiries {
@@ -113,7 +101,6 @@
     self.loansTableView.hidden = YES;
     self.loginButton.hidden = NO;
     self.signupButton.hidden = NO;
-    self.title = @"";
 }
 
 - (void)showLoggedInState {
@@ -122,7 +109,6 @@
     self.loansTableView.hidden = NO;
     self.loginButton.hidden = YES;
     self.signupButton.hidden = YES;
-    self.title = @"My Loan Enquiries";
 }
 
 - (void)showErrorWithTitle:(NSString*)title andMessage:(NSString*)message {
