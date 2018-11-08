@@ -24,6 +24,9 @@
         case EnquiryStatusCancelled:
             return @"Cancelled";
             break;
+        case EnquiryStatusEnded:
+            return @"Ended";
+            break;
         default:
             return @"Unknown";
             break;

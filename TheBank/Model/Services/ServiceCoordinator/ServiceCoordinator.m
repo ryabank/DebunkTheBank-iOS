@@ -26,7 +26,7 @@
 }
 
 - (void)updateDataServiceFromUserService {
-    [LoanServiceFirebase.sharedService setUserIdentifier:AuthServiceFirebase.sharedService.currentUser.identifier];
+//    [LoanServiceFirebase.sharedService setUserIdentifier:AuthServiceFirebase.sharedService.currentUser.identifier];
 }
 
 @end

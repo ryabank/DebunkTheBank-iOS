@@ -93,4 +93,17 @@
     }];
 }
 
+- (void)selectEnquiryWithIdentifier:(NSString *)identifier {
+    [self.loanService returnLoanEnquiry:identifier completion:^(BOOL success, NSError *error) {
+        if (error || !success) {
+            [self.view showErrorWithTitle:@"Error" andMessage:@"There was an error returning the loan"];
+            return;
+        }
+        
+        [self.loanService requestLoanEnquiries:^(NSArray<LoanEnquiry *> *enquiries) {
+            [self.view displayLoanEnquiries:enquiries];
+        }];
+    }];
+}
+
 @end

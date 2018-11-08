@@ -16,4 +16,6 @@
 
 - (void)createLoanEnquiry:(LoanEnquiry*)enquiry completion:(void(^)(BOOL success, NSError *error))completion;
 
+- (void)returnLoanEnquiry:(NSString*)enquiryIdentifier completion:(void(^)(BOOL success, NSError *error))completion;
+
 @end

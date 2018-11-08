@@ -13,6 +13,4 @@
 
 + (instancetype)sharedService;
 
-- (void)setUserIdentifier:(NSString*)userId;
-
 @end

@@ -193,6 +193,13 @@ const CGFloat kCellHeight = 44.0;
     cell.detailTextLabel.text = enquiry.statusString;
     cell.detailTextLabel.textColor = [self statusColor:enquiry.status];
     
+    if (enquiry.status == EnquiryStatusEnded) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    else {
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+    }
+    
     return cell;
 }
 
@@ -202,6 +209,27 @@ const CGFloat kCellHeight = 44.0;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    LoanEnquiry *enquiry = self.enquiries[indexPath.row];
+    
+    if (enquiry.status == EnquiryStatusEnded) {
+        // we can't return a returned loan
+        return;
+    }
+    
+    UIAlertController *returnAlert = [UIAlertController alertControllerWithTitle:@"Return Loan"
+                                                                         message:@"Would you like to return this loan now?"
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *returnAction = [UIAlertAction actionWithTitle:@"Return Now" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.presenter selectEnquiryWithIdentifier:enquiry.identifier];
+    }];
+    
+    [returnAlert addAction:cancelAction];
+    [returnAlert addAction:returnAction];
+    
+    [self presentViewController:returnAlert animated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -218,6 +246,9 @@ const CGFloat kCellHeight = 44.0;
             break;
         case EnquiryStatusRejected:
             return [UIColor redColor];
+            break;
+        case EnquiryStatusEnded:
+            return [UIColor lightGrayColor];
             break;
         case EnquiryStatusCancelled:
             return [UIColor lightGrayColor];

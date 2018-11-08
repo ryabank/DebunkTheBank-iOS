@@ -27,6 +27,8 @@
 - (void)newEnquiry;
 - (void)createEnquiryForAddress:(NSString*)address amount:(NSString*)amount andDuration:(NSString*)duration;
 
+- (void)selectEnquiryWithIdentifier:(NSString*)identifier;
+
 @end
 
 @interface LoanEnquiriesViewPresenter : BasePresenter <LoanEnquiriesViewPresenterProtocol>

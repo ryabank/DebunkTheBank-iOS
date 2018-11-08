@@ -26,12 +26,6 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
 
 @interface LoanServiceFirebase()
 
-// loans
-//@property (nonatomic, strong) NSMutableArray<LoanEnquiry*> *loanEnquiries;
-
-// userId
-@property (nonatomic, strong) NSString* userId;
-
 // db ref
 @property (nonatomic, strong) FIRDatabaseReference *ref;
 
@@ -58,10 +52,6 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
     return sharedService;
 }
 
-- (void)setUserIdentifier:(NSString *)userId {
-    _userId = userId;
-}
-
 - (NSMutableArray<LoanEnquiry*>*)mockLoanEnquiries {
     LoanEnquiry *e1 = [[LoanEnquiry alloc] init];
     e1.loanAmount = @"1000";
@@ -79,6 +69,10 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
     e1.status = EnquiryStatusPending;
     
     return @[e1, e2, e3].mutableCopy;
+}
+
+- (NSString*)userId {
+    return [FIRAuth auth].currentUser.uid;
 }
 
 #pragma mark LoanServiceProtocol methods
@@ -141,6 +135,22 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
     // Add group to user groups link data
     NSString *clientLoansPath = [NSString stringWithFormat:@"%@/%@/%@", kClientsKey, self.userId, kLoansKey];
     [[[self.ref child:clientLoansPath] child:enquiryUUID] setValue:@(YES)];
+    
+    if (completion) {
+        completion(YES, nil);
+    }
+}
+
+- (void)returnLoanEnquiry:(NSString*)enquiryIdentifier completion:(void(^)(BOOL success, NSError *error))completion {
+    if (self.userId == nil || enquiryIdentifier == nil) {
+        if (completion) {
+            completion(NO, [NSError errorWithDomain:@"com.debunk.createLoan" code:-1 userInfo:nil]);
+        }
+        return;
+    }
+    
+    // Add group to groups data
+    [[[[self.ref child:kLoansKey] child:enquiryIdentifier] child:kStatusKey] setValue:@(EnquiryStatusEnded)];
     
     if (completion) {
         completion(YES, nil);

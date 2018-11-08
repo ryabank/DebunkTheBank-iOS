@@ -74,7 +74,7 @@
                                 <rect key="frame" x="87.5" y="302" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="4NZ-Bn-318"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4NZ-Bn-318"/>
                                     <constraint firstAttribute="height" constant="50" id="uk1-qs-vDE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="87" y="372" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="7hi-7c-0Zy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="7hi-7c-0Zy"/>
                                     <constraint firstAttribute="height" constant="50" id="kl2-Vc-XfX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
