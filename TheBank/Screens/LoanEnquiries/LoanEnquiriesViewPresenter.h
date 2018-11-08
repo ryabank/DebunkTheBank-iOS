@@ -9,11 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "BasePresenter.h"
 #import "LoanEnquiriesViewProtocol.h"
+#import "AuthServiceProtocol.h"
 #import "LoanServiceProtocol.h"
 
 @protocol LoanEnquiriesViewPresenterProtocol <BasePresenterProcotol>
 
 @property (nonatomic, strong) id<LoanServiceProtocol> loanService;
+@property (nonatomic, strong) id<AuthServiceProtocol> authService;
+
+- (void)loginButton;
+- (void)signupButton;
+- (void)logoutButton;
+
+- (void)loginEmail:(NSString*)email password:(NSString*)password;
+- (void)signupEmail:(NSString*)email password:(NSString*)password;
 
 - (void)newEnquiry;
 - (void)createEnquiryForAddress:(NSString*)address amount:(NSString*)amount andDuration:(NSString*)duration;

@@ -66,27 +66,56 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxv-cl-ep8">
+                                <rect key="frame" x="157.5" y="231" width="60" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="SLB-dK-Egc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-Xp-fSm" userLabel="Signup Button">
+                                <rect key="frame" x="149" y="276" width="76" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Signup"/>
+                                <connections>
+                                    <action selector="signupButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="HuU-q0-rEq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="20" id="Hv9-Oy-y0q"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="Jw8-Ao-pof"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="y7b-RB-uMc" secondAttribute="bottom" id="R6X-1K-Kwo"/>
+                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="fQe-3z-pb1"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="k8d-TH-Yk5"/>
+                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="-25" id="kvR-wo-LiG"/>
+                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="tBb-8Q-CdJ"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="trailing" secondItem="y7b-RB-uMc" secondAttribute="trailing" id="wgl-rE-uBO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3h-m6-GLO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Loan Enquiries" id="kIU-UV-8yK">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="6e1-SX-Hcc">
+                            <connections>
+                                <action selector="logoutButtonClicked:" destination="Fd3-Sr-NHk" id="lfU-Z8-bLW"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eZb-aj-XMU">
                             <connections>
-                                <action selector="newEnquiryButtonClicked:" destination="Fd3-Sr-NHk" id="4eM-k9-UGb"/>
+                                <action selector="addEnquiryButtonClicked:" destination="Fd3-Sr-NHk" id="Lph-I5-z76"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
+                        <outlet property="addEnquiryButton" destination="eZb-aj-XMU" id="gFA-oS-Von"/>
                         <outlet property="loansTableView" destination="y7b-RB-uMc" id="aJI-Ui-r8I"/>
+                        <outlet property="loginButton" destination="rxv-cl-ep8" id="KO1-LE-DR5"/>
+                        <outlet property="logoutButtonItem" destination="6e1-SX-Hcc" id="fVf-LW-QmK"/>
+                        <outlet property="signupButton" destination="Fvh-Xp-fSm" id="xqf-bz-5Nx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbb-Ii-d4W" userLabel="First Responder" sceneMemberID="firstResponder"/>

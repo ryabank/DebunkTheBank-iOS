@@ -11,7 +11,8 @@
 typedef enum EnquiryStatus {
     EnquiryStatusPending = 1,
     EnquiryStatusApproved,
-    EnquiryStatusRejected
+    EnquiryStatusRejected,
+    EnquiryStatusCancelled
 } EnquiryStatus;
 
 @interface LoanEnquiry : NSObject
@@ -19,6 +20,7 @@ typedef enum EnquiryStatus {
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *loanAmount;
 @property (nonatomic, strong) NSString *blocksDuration;
+@property (nonatomic, strong) NSString *loanToAddress;
 @property (readwrite) EnquiryStatus status;
 
 - (NSString*)statusString;

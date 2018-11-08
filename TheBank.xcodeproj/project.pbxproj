@@ -37,6 +37,12 @@
 		791722B821944AD500EAC698 /* LoanEnquiryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722B721944AD500EAC698 /* LoanEnquiryTableViewCell.m */; };
 		791722BC21945DB300EAC698 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791722BA21945DB300EAC698 /* GTMSessionFetcher.framework */; };
 		791722BD21945DB400EAC698 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791722BB21945DB300EAC698 /* FirebaseAuth.framework */; };
+		791722C4219469CE00EAC698 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722C3219469CE00EAC698 /* User.m */; };
+		791722C5219469CE00EAC698 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722C3219469CE00EAC698 /* User.m */; };
+		791722C821946A1D00EAC698 /* AuthServiceFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722C721946A1D00EAC698 /* AuthServiceFirebase.m */; };
+		791722CC21946C6600EAC698 /* User+Firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722CB21946C6600EAC698 /* User+Firebase.m */; };
+		791722CD21946C6600EAC698 /* User+Firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722CB21946C6600EAC698 /* User+Firebase.m */; };
+		791722D12194859A00EAC698 /* ServiceCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722D02194859A00EAC698 /* ServiceCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,15 @@
 		791722B721944AD500EAC698 /* LoanEnquiryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanEnquiryTableViewCell.m; sourceTree = "<group>"; };
 		791722BA21945DB300EAC698 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		791722BB21945DB300EAC698 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		791722C02194699900EAC698 /* AuthServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthServiceProtocol.h; sourceTree = "<group>"; };
+		791722C2219469CE00EAC698 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		791722C3219469CE00EAC698 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		791722C621946A1D00EAC698 /* AuthServiceFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthServiceFirebase.h; sourceTree = "<group>"; };
+		791722C721946A1D00EAC698 /* AuthServiceFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthServiceFirebase.m; sourceTree = "<group>"; };
+		791722CA21946C6600EAC698 /* User+Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+Firebase.h"; sourceTree = "<group>"; };
+		791722CB21946C6600EAC698 /* User+Firebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+Firebase.m"; sourceTree = "<group>"; };
+		791722CF2194859A00EAC698 /* ServiceCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceCoordinator.h; sourceTree = "<group>"; };
+		791722D02194859A00EAC698 /* ServiceCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +191,8 @@
 		7917226F21937FE000EAC698 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				791722CE2194858200EAC698 /* ServiceCoordinator */,
+				791722BF2194697C00EAC698 /* AuthService */,
 				791722BE21945DBD00EAC698 /* LoanService */,
 			);
 			path = Services;
@@ -232,6 +249,7 @@
 		79172276219382D500EAC698 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				791722C1219469B100EAC698 /* User */,
 				79172277219382FA00EAC698 /* LoanEnquiry */,
 			);
 			path = DataModels;
@@ -315,6 +333,36 @@
 				7917227D2193856600EAC698 /* LoanServiceFirebase.m */,
 			);
 			path = LoanService;
+			sourceTree = "<group>";
+		};
+		791722BF2194697C00EAC698 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				791722C02194699900EAC698 /* AuthServiceProtocol.h */,
+				791722C621946A1D00EAC698 /* AuthServiceFirebase.h */,
+				791722C721946A1D00EAC698 /* AuthServiceFirebase.m */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		791722C1219469B100EAC698 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				791722C2219469CE00EAC698 /* User.h */,
+				791722C3219469CE00EAC698 /* User.m */,
+				791722CA21946C6600EAC698 /* User+Firebase.h */,
+				791722CB21946C6600EAC698 /* User+Firebase.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		791722CE2194858200EAC698 /* ServiceCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				791722CF2194859A00EAC698 /* ServiceCoordinator.h */,
+				791722D02194859A00EAC698 /* ServiceCoordinator.m */,
+			);
+			path = ServiceCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,11 +471,15 @@
 				7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */,
 				7917227E2193856600EAC698 /* LoanServiceFirebase.m in Sources */,
 				791722B821944AD500EAC698 /* LoanEnquiryTableViewCell.m in Sources */,
+				791722C821946A1D00EAC698 /* AuthServiceFirebase.m in Sources */,
 				7917228521938AEC00EAC698 /* LoanEnquiriesViewController.m in Sources */,
+				791722D12194859A00EAC698 /* ServiceCoordinator.m in Sources */,
 				7917225B21937F4E00EAC698 /* main.m in Sources */,
+				791722C4219469CE00EAC698 /* User.m in Sources */,
 				7917228821938B4300EAC698 /* BasePresenter.m in Sources */,
 				7917224D21937F4B00EAC698 /* FirstViewController.m in Sources */,
 				7917228D21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */,
+				791722CC21946C6600EAC698 /* User+Firebase.m in Sources */,
 				7917227A2193842400EAC698 /* LoanEnquiry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +488,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791722C5219469CE00EAC698 /* User.m in Sources */,
+				791722CD21946C6600EAC698 /* User+Firebase.m in Sources */,
 				7917226521937F4E00EAC698 /* TheBankTests.m in Sources */,
 				7917228E21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */,
 				7917227B2193842400EAC698 /* LoanEnquiry.m in Sources */,

@@ -10,6 +10,7 @@
 #import "LoanEnquiriesViewProtocol.h"
 #import "LoanEnquiriesViewPresenter.h"
 #import "LoanServiceFirebase.h"
+#import "AuthServiceFirebase.h"
 
 #import "LoanEnquiryTableViewCell.h"
 
@@ -19,6 +20,11 @@
 
 @property (nonatomic, strong) NSArray<LoanEnquiry*> *enquiries;
 @property (weak, nonatomic) IBOutlet UITableView *loansTableView;
+
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *signupButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *logoutButtonItem;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *addEnquiryButton;
 
 @end
 
@@ -37,8 +43,8 @@
     
     self.presenter = [[LoanEnquiriesViewPresenter alloc] initWithView:self];
     LoanServiceFirebase *service = [LoanServiceFirebase sharedService];
-    [service setUserIdentifier:@"fakeId"];
     self.presenter.loanService = service;
+    self.presenter.authService = [AuthServiceFirebase sharedService];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -62,8 +68,20 @@
 }
 */
 
-- (IBAction)newEnquiryButtonClicked:(id)sender {
+- (IBAction)addEnquiryButtonClicked:(id)sender {
     [self.presenter newEnquiry];
+}
+
+- (IBAction)loginButtonClicked:(id)sender {
+    [self.presenter loginButton];
+}
+
+- (IBAction)signupButtonClicked:(id)sender {
+    [self.presenter signupButton];
+}
+
+- (IBAction)logoutButtonClicked:(id)sender {
+    [self.presenter logoutButton];
 }
 
 #pragma mark LoanEnquiriesViewProtocol methods
@@ -87,6 +105,77 @@
 - (void)displayLoanEnquiries:(NSArray<LoanEnquiry *> *)enquiries {
     self.enquiries = enquiries;
     [self.loansTableView reloadData];
+}
+
+- (void)showEmptyState {
+    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItem = nil;
+    self.loansTableView.hidden = YES;
+    self.loginButton.hidden = NO;
+    self.signupButton.hidden = NO;
+    self.title = @"";
+}
+
+- (void)showLoggedInState {
+    self.navigationItem.leftBarButtonItem = self.logoutButtonItem;
+    self.navigationItem.rightBarButtonItem = self.addEnquiryButton;
+    self.loansTableView.hidden = NO;
+    self.loginButton.hidden = YES;
+    self.signupButton.hidden = YES;
+    self.title = @"My Loan Enquiries";
+}
+
+- (void)showErrorWithTitle:(NSString*)title andMessage:(NSString*)message {
+    UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+    [errorAlert addAction:okAction];
+    [self presentViewController:errorAlert animated:YES completion:nil];
+}
+
+- (void)showLoginDialog {
+    UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:@"Login" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *sendAction = [UIAlertAction actionWithTitle:@"Send" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.presenter loginEmail:loginAlert.textFields[0].text
+                          password:loginAlert.textFields[1].text];
+    }];
+    
+    [loginAlert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"email";
+    }];
+    [loginAlert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.secureTextEntry = YES;
+        textField.placeholder = @"password";
+    }];
+    
+    [loginAlert addAction:cancelAction];
+    [loginAlert addAction:sendAction];
+    
+    [self presentViewController:loginAlert animated:YES completion:nil];
+}
+
+- (void)showSignupDialog {
+    UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:@"Sign Up" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *sendAction = [UIAlertAction actionWithTitle:@"Send" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.presenter signupEmail:loginAlert.textFields[0].text
+                           password:loginAlert.textFields[1].text];
+    }];
+    
+    [loginAlert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"email";
+    }];
+    [loginAlert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.secureTextEntry = YES;
+        textField.placeholder = @"password";
+    }];
+    
+    [loginAlert addAction:cancelAction];
+    [loginAlert addAction:sendAction];
+    
+    [self presentViewController:loginAlert animated:YES completion:nil];
 }
 
 @end

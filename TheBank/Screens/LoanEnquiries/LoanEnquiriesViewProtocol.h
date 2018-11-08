@@ -14,4 +14,12 @@
 - (void)displayLoanEnquiryDialog;
 - (void)displayLoanEnquiries:(NSArray<LoanEnquiry*>*)enquiries;
 
+- (void)showEmptyState;
+- (void)showLoggedInState;
+
+- (void)showLoginDialog;
+- (void)showSignupDialog;
+
+- (void)showErrorWithTitle:(NSString*)title andMessage:(NSString*)message;
+
 @end
