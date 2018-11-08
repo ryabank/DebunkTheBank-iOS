@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Jm-SK-wi6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Loans-->
+        <scene sceneID="0dC-YY-sfs">
+            <objects>
+                <navigationController id="9Jm-SK-wi6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Loans" image="first" id="h4g-PB-Upt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qxz-QF-NKw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fd3-Sr-NHk" kind="relationship" relationship="rootViewController" id="C8O-GQ-vJj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LxY-D9-1Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="159"/>
+        </scene>
+        <!--Loan Enquiries-->
+        <scene sceneID="lRf-aK-0WF">
+            <objects>
+                <viewController id="Fd3-Sr-NHk" customClass="LoanEnquiriesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZnW-LO-2hP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-RB-uMc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="loanEnquiryCellIdentifier" textLabel="lAe-BA-pc1" detailTextLabel="KxH-ev-fKW" style="IBUITableViewCellStyleValue1" id="cJo-rO-W9J" customClass="LoanEnquiryTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cJo-rO-W9J" id="PX6-1e-Zts">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lAe-BA-pc1">
+                                                    <rect key="frame" x="15" y="12" width="60" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KxH-ev-fKW">
+                                                    <rect key="frame" x="310.5" y="12" width="49.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y7b-RB-uMc" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="Jw8-Ao-pof"/>
+                            <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="y7b-RB-uMc" secondAttribute="bottom" id="R6X-1K-Kwo"/>
+                            <constraint firstItem="y7b-RB-uMc" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="k8d-TH-Yk5"/>
+                            <constraint firstItem="Z3h-m6-GLO" firstAttribute="trailing" secondItem="y7b-RB-uMc" secondAttribute="trailing" id="wgl-rE-uBO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z3h-m6-GLO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Loan Enquiries" id="kIU-UV-8yK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eZb-aj-XMU">
+                            <connections>
+                                <action selector="newEnquiryButtonClicked:" destination="Fd3-Sr-NHk" id="4eM-k9-UGb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="loansTableView" destination="y7b-RB-uMc" id="aJI-Ui-r8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbb-Ii-d4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

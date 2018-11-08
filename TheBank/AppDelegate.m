@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  TheBank
 //
-//  Created by Oren Shtark on 07/11/2018.
-//  Copyright © 2018 DeBunk. All rights reserved.
+//  Created by Debunk on 07/11/2018.
+//  Copyright © 2018 Debunk. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "Firebase.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [FIRApp configure];
+    
     return YES;
 }
 

@@ -15,6 +15,28 @@
 		7917225821937F4E00EAC698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917225621937F4E00EAC698 /* LaunchScreen.storyboard */; };
 		7917225B21937F4E00EAC698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917225A21937F4E00EAC698 /* main.m */; };
 		7917226521937F4E00EAC698 /* TheBankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917226421937F4E00EAC698 /* TheBankTests.m */; };
+		7917227A2193842400EAC698 /* LoanEnquiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722792193842400EAC698 /* LoanEnquiry.m */; };
+		7917227B2193842400EAC698 /* LoanEnquiry.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722792193842400EAC698 /* LoanEnquiry.m */; };
+		7917227E2193856600EAC698 /* LoanServiceFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917227D2193856600EAC698 /* LoanServiceFirebase.m */; };
+		79172282219386D600EAC698 /* LoanEnquiries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79172280219386D600EAC698 /* LoanEnquiries.storyboard */; };
+		7917228521938AEC00EAC698 /* LoanEnquiriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917228421938AEC00EAC698 /* LoanEnquiriesViewController.m */; };
+		7917228821938B4300EAC698 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917228721938B4300EAC698 /* BasePresenter.m */; };
+		7917228921938B4300EAC698 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917228721938B4300EAC698 /* BasePresenter.m */; };
+		7917228D21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917228C21938C6800EAC698 /* LoanEnquiriesViewPresenter.m */; };
+		7917228E21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917228C21938C6800EAC698 /* LoanEnquiriesViewPresenter.m */; };
+		791722A121943D2300EAC698 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229621943D2100EAC698 /* leveldb-library.framework */; };
+		791722A321943D2300EAC698 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229721943D2100EAC698 /* FirebaseDatabase.framework */; };
+		791722A521943D2300EAC698 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229A21943D2300EAC698 /* FirebaseCore.framework */; };
+		791722A721943D2300EAC698 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229B21943D2300EAC698 /* FirebaseAnalytics.framework */; };
+		791722A921943D2300EAC698 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229C21943D2300EAC698 /* GoogleToolboxForMac.framework */; };
+		791722AB21943D2300EAC698 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229D21943D2300EAC698 /* nanopb.framework */; };
+		791722AD21943D2300EAC698 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229E21943D2300EAC698 /* FirebaseNanoPB.framework */; };
+		791722AF21943D2300EAC698 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7917229F21943D2300EAC698 /* FirebaseInstanceID.framework */; };
+		791722B121943D2300EAC698 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791722A021943D2300EAC698 /* FirebaseCoreDiagnostics.framework */; };
+		791722B421943EB200EAC698 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 791722B321943EB100EAC698 /* GoogleService-Info.plist */; };
+		791722B821944AD500EAC698 /* LoanEnquiryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791722B721944AD500EAC698 /* LoanEnquiryTableViewCell.m */; };
+		791722BC21945DB300EAC698 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791722BA21945DB300EAC698 /* GTMSessionFetcher.framework */; };
+		791722BD21945DB400EAC698 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791722BB21945DB300EAC698 /* FirebaseAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +65,34 @@
 		7917226021937F4E00EAC698 /* TheBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7917226421937F4E00EAC698 /* TheBankTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheBankTests.m; sourceTree = "<group>"; };
 		7917226621937F4E00EAC698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791722752193816000EAC698 /* LoanServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanServiceProtocol.h; sourceTree = "<group>"; };
+		791722782193842400EAC698 /* LoanEnquiry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanEnquiry.h; sourceTree = "<group>"; };
+		791722792193842400EAC698 /* LoanEnquiry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanEnquiry.m; sourceTree = "<group>"; };
+		7917227C2193856600EAC698 /* LoanServiceFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanServiceFirebase.h; sourceTree = "<group>"; };
+		7917227D2193856600EAC698 /* LoanServiceFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanServiceFirebase.m; sourceTree = "<group>"; };
+		79172281219386D600EAC698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoanEnquiries.storyboard; sourceTree = "<group>"; };
+		7917228321938AEC00EAC698 /* LoanEnquiriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanEnquiriesViewController.h; sourceTree = "<group>"; };
+		7917228421938AEC00EAC698 /* LoanEnquiriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanEnquiriesViewController.m; sourceTree = "<group>"; };
+		7917228621938B4300EAC698 /* BasePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
+		7917228721938B4300EAC698 /* BasePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
+		7917228B21938C6800EAC698 /* LoanEnquiriesViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanEnquiriesViewPresenter.h; sourceTree = "<group>"; };
+		7917228C21938C6800EAC698 /* LoanEnquiriesViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanEnquiriesViewPresenter.m; sourceTree = "<group>"; };
+		791722922193984600EAC698 /* LoanEnquiriesViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanEnquiriesViewProtocol.h; sourceTree = "<group>"; };
+		7917229621943D2100EAC698 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		7917229721943D2100EAC698 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		7917229821943D2100EAC698 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		7917229A21943D2300EAC698 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		7917229B21943D2300EAC698 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7917229C21943D2300EAC698 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		7917229D21943D2300EAC698 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		7917229E21943D2300EAC698 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		7917229F21943D2300EAC698 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		791722A021943D2300EAC698 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		791722B321943EB100EAC698 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		791722B621944AD500EAC698 /* LoanEnquiryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanEnquiryTableViewCell.h; sourceTree = "<group>"; };
+		791722B721944AD500EAC698 /* LoanEnquiryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanEnquiryTableViewCell.m; sourceTree = "<group>"; };
+		791722BA21945DB300EAC698 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		791722BB21945DB300EAC698 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +100,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791722A721943D2300EAC698 /* FirebaseAnalytics.framework in Frameworks */,
+				791722A321943D2300EAC698 /* FirebaseDatabase.framework in Frameworks */,
+				791722A121943D2300EAC698 /* leveldb-library.framework in Frameworks */,
+				791722AF21943D2300EAC698 /* FirebaseInstanceID.framework in Frameworks */,
+				791722BC21945DB300EAC698 /* GTMSessionFetcher.framework in Frameworks */,
+				791722A521943D2300EAC698 /* FirebaseCore.framework in Frameworks */,
+				791722BD21945DB400EAC698 /* FirebaseAuth.framework in Frameworks */,
+				791722AB21943D2300EAC698 /* nanopb.framework in Frameworks */,
+				791722B121943D2300EAC698 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				791722AD21943D2300EAC698 /* FirebaseNanoPB.framework in Frameworks */,
+				791722A921943D2300EAC698 /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,17 +145,21 @@
 		7917224721937F4B00EAC698 /* TheBank */ = {
 			isa = PBXGroup;
 			children = (
+				79172274219380F800EAC698 /* Network */,
+				791722712193801100EAC698 /* Model */,
+				7917227021937FEA00EAC698 /* Screens */,
+				791722722193802400EAC698 /* Storyboards */,
 				7917224821937F4B00EAC698 /* AppDelegate.h */,
 				7917224921937F4B00EAC698 /* AppDelegate.m */,
 				7917224B21937F4B00EAC698 /* FirstViewController.h */,
 				7917224C21937F4B00EAC698 /* FirstViewController.m */,
 				7917224E21937F4B00EAC698 /* SecondViewController.h */,
 				7917224F21937F4B00EAC698 /* SecondViewController.m */,
-				7917225121937F4B00EAC698 /* Main.storyboard */,
 				7917225421937F4E00EAC698 /* Assets.xcassets */,
 				7917225621937F4E00EAC698 /* LaunchScreen.storyboard */,
 				7917225921937F4E00EAC698 /* Info.plist */,
 				7917225A21937F4E00EAC698 /* main.m */,
+				7917229321943D0500EAC698 /* External */,
 			);
 			path = TheBank;
 			sourceTree = "<group>";
@@ -106,6 +171,150 @@
 				7917226621937F4E00EAC698 /* Info.plist */,
 			);
 			path = TheBankTests;
+			sourceTree = "<group>";
+		};
+		7917226F21937FE000EAC698 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				791722BE21945DBD00EAC698 /* LoanService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7917227021937FEA00EAC698 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7917228A21938B5900EAC698 /* BaseClasses */,
+				791722732193803F00EAC698 /* LoanEnquiries */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		791722712193801100EAC698 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7917226F21937FE000EAC698 /* Services */,
+				79172276219382D500EAC698 /* DataModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		791722722193802400EAC698 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7917225121937F4B00EAC698 /* Main.storyboard */,
+				79172280219386D600EAC698 /* LoanEnquiries.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		791722732193803F00EAC698 /* LoanEnquiries */ = {
+			isa = PBXGroup;
+			children = (
+				7917228321938AEC00EAC698 /* LoanEnquiriesViewController.h */,
+				7917228421938AEC00EAC698 /* LoanEnquiriesViewController.m */,
+				791722922193984600EAC698 /* LoanEnquiriesViewProtocol.h */,
+				7917228B21938C6800EAC698 /* LoanEnquiriesViewPresenter.h */,
+				7917228C21938C6800EAC698 /* LoanEnquiriesViewPresenter.m */,
+				791722B621944AD500EAC698 /* LoanEnquiryTableViewCell.h */,
+				791722B721944AD500EAC698 /* LoanEnquiryTableViewCell.m */,
+			);
+			path = LoanEnquiries;
+			sourceTree = "<group>";
+		};
+		79172274219380F800EAC698 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		79172276219382D500EAC698 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				79172277219382FA00EAC698 /* LoanEnquiry */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		79172277219382FA00EAC698 /* LoanEnquiry */ = {
+			isa = PBXGroup;
+			children = (
+				791722782193842400EAC698 /* LoanEnquiry.h */,
+				791722792193842400EAC698 /* LoanEnquiry.m */,
+			);
+			path = LoanEnquiry;
+			sourceTree = "<group>";
+		};
+		7917228A21938B5900EAC698 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7917228621938B4300EAC698 /* BasePresenter.h */,
+				7917228721938B4300EAC698 /* BasePresenter.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		7917229321943D0500EAC698 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				7917229421943D1400EAC698 /* Firebase */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		7917229421943D1400EAC698 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				791722B921945DB300EAC698 /* Auth */,
+				7917229921943D2300EAC698 /* Analytics */,
+				7917229521943D2100EAC698 /* Database */,
+				7917229821943D2100EAC698 /* Firebase.h */,
+				791722B321943EB100EAC698 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7917229521943D2100EAC698 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7917229621943D2100EAC698 /* leveldb-library.framework */,
+				7917229721943D2100EAC698 /* FirebaseDatabase.framework */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		7917229921943D2300EAC698 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				7917229A21943D2300EAC698 /* FirebaseCore.framework */,
+				7917229B21943D2300EAC698 /* FirebaseAnalytics.framework */,
+				7917229C21943D2300EAC698 /* GoogleToolboxForMac.framework */,
+				7917229D21943D2300EAC698 /* nanopb.framework */,
+				7917229E21943D2300EAC698 /* FirebaseNanoPB.framework */,
+				7917229F21943D2300EAC698 /* FirebaseInstanceID.framework */,
+				791722A021943D2300EAC698 /* FirebaseCoreDiagnostics.framework */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		791722B921945DB300EAC698 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				791722BA21945DB300EAC698 /* GTMSessionFetcher.framework */,
+				791722BB21945DB300EAC698 /* FirebaseAuth.framework */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		791722BE21945DBD00EAC698 /* LoanService */ = {
+			isa = PBXGroup;
+			children = (
+				791722752193816000EAC698 /* LoanServiceProtocol.h */,
+				7917227C2193856600EAC698 /* LoanServiceFirebase.h */,
+				7917227D2193856600EAC698 /* LoanServiceFirebase.m */,
+			);
+			path = LoanService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +399,8 @@
 			files = (
 				7917225821937F4E00EAC698 /* LaunchScreen.storyboard in Resources */,
 				7917225521937F4E00EAC698 /* Assets.xcassets in Resources */,
+				791722B421943EB200EAC698 /* GoogleService-Info.plist in Resources */,
+				79172282219386D600EAC698 /* LoanEnquiries.storyboard in Resources */,
 				7917225321937F4B00EAC698 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +421,14 @@
 			files = (
 				7917225021937F4B00EAC698 /* SecondViewController.m in Sources */,
 				7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */,
+				7917227E2193856600EAC698 /* LoanServiceFirebase.m in Sources */,
+				791722B821944AD500EAC698 /* LoanEnquiryTableViewCell.m in Sources */,
+				7917228521938AEC00EAC698 /* LoanEnquiriesViewController.m in Sources */,
 				7917225B21937F4E00EAC698 /* main.m in Sources */,
+				7917228821938B4300EAC698 /* BasePresenter.m in Sources */,
 				7917224D21937F4B00EAC698 /* FirstViewController.m in Sources */,
+				7917228D21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */,
+				7917227A2193842400EAC698 /* LoanEnquiry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +437,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7917226521937F4E00EAC698 /* TheBankTests.m in Sources */,
+				7917228E21938C6800EAC698 /* LoanEnquiriesViewPresenter.m in Sources */,
+				7917227B2193842400EAC698 /* LoanEnquiry.m in Sources */,
+				7917228921938B4300EAC698 /* BasePresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +468,14 @@
 				7917225721937F4E00EAC698 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79172280219386D600EAC698 /* LoanEnquiries.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79172281219386D600EAC698 /* Base */,
+			);
+			name = LoanEnquiries.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -368,11 +596,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Database",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Analytics",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Auth",
+				);
 				INFOPLIST_FILE = TheBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,11 +620,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Database",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Analytics",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Auth",
+				);
 				INFOPLIST_FILE = TheBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.debunk.TheBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,6 +644,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Database",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Analytics",
+				);
 				INFOPLIST_FILE = TheBankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,6 +667,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Database",
+					"$(PROJECT_DIR)/TheBank/External/Firebase/Analytics",
+				);
 				INFOPLIST_FILE = TheBankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
