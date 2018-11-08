@@ -61,3 +61,10 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# project.workspace file
+TheBank.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# Google Services info file
+# This one should be added locally
+TheBank/External/Firebase/GoogleService-Info.plist
