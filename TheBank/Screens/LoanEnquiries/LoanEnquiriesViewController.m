@@ -46,10 +46,10 @@
     self.presenter.loanService = service;
     self.presenter.authService = [AuthServiceFirebase sharedService];
     
-    self.loginButton.layer.cornerRadius = 10.0;
+    self.loginButton.layer.cornerRadius = 5.0;
     self.loginButton.layer.borderColor = UIColor.grayColor.CGColor;
     self.loginButton.layer.borderWidth = 1.0;
-    self.signupButton.layer.cornerRadius = 10.0;
+    self.signupButton.layer.cornerRadius = 5.0;
     self.signupButton.layer.borderColor = UIColor.grayColor.CGColor;
     self.signupButton.layer.borderWidth = 1.0;
 }

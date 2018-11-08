@@ -71,19 +71,27 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxv-cl-ep8">
-                                <rect key="frame" x="146.5" y="221" width="82" height="42"/>
+                                <rect key="frame" x="87.5" y="302" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="  Login  "/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4NZ-Bn-318"/>
+                                    <constraint firstAttribute="height" constant="50" id="uk1-qs-vDE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="SLB-dK-Egc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-Xp-fSm" userLabel="Signup Button">
-                                <rect key="frame" x="138" y="291" width="98" height="42"/>
+                                <rect key="frame" x="87" y="372" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="  Signup  "/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7hi-7c-0Zy"/>
+                                    <constraint firstAttribute="height" constant="50" id="kl2-Vc-XfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Signup"/>
                                 <connections>
                                     <action selector="signupButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="HuU-q0-rEq"/>
                                 </connections>
@@ -92,13 +100,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="trailing" secondItem="MOf-TE-9wA" secondAttribute="trailing" id="9ST-iw-Zfb"/>
-                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="35" id="Hv9-Oy-y0q"/>
+                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="120" id="Hv9-Oy-y0q"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="Jw8-Ao-pof"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="y7b-RB-uMc" secondAttribute="bottom" id="R6X-1K-Kwo"/>
                             <constraint firstItem="rxv-cl-ep8" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="fQe-3z-pb1"/>
                             <constraint firstItem="MOf-TE-9wA" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="gLZ-yw-jnM"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="k8d-TH-Yk5"/>
-                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="-35" id="kvR-wo-LiG"/>
+                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="50" id="kvR-wo-LiG"/>
                             <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="tBb-8Q-CdJ"/>
                             <constraint firstItem="MOf-TE-9wA" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="uwn-j3-Yfs"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="MOf-TE-9wA" secondAttribute="bottom" id="v2s-a5-HGU"/>

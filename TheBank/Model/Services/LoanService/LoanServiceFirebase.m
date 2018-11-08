@@ -21,7 +21,7 @@ static NSString * const kIdentifierKey = @"identifier";
 static NSString * const kStatusKey = @"status";
 static NSString * const kDescriptionKey = @"description";
 static NSString * const kNotesKey = @"notes";
-static NSString * const kDurationKey = @"duration";
+static NSString * const kDurationKey = @"durationBlocks";
 static NSString * const kLoanToAddressKey = @"loanToAddress";
 
 @interface LoanServiceFirebase()
@@ -125,12 +125,13 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
     NSString *enquiryUUID = [NSUUID UUID].UUIDString;
     EnquiryStatus status = EnquiryStatusPending;
     NSDictionary *enquiryDict = @{ kIdentifierKey : enquiryUUID,
-                                 kStatusKey : @(status),
-                                 kUpdateTimestampKey : FIRServerValue.timestamp,
-                                 kDescriptionKey : enquiry.enqueryDescription,
-                                 kNotesKey : enquiry.notes,
-                                 kAmountKey : enquiry.loanAmount,
-                                 kDurationKey : enquiry.blocksDuration
+                                   kStatusKey : @(status),
+                                   kUpdateTimestampKey : FIRServerValue.timestamp,
+                                   kDescriptionKey : enquiry.enqueryDescription,
+                                   kNotesKey : enquiry.notes,
+                                   kAmountKey : enquiry.loanAmount,
+                                   kDurationKey : enquiry.blocksDuration,
+                                   kLoanToAddressKey : enquiry.loanToAddress
 //                                 kClientKey : @{self.userId : @(YES)},
                                  };
     
