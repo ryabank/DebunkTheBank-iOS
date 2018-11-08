@@ -45,6 +45,13 @@
     LoanServiceFirebase *service = [LoanServiceFirebase sharedService];
     self.presenter.loanService = service;
     self.presenter.authService = [AuthServiceFirebase sharedService];
+    
+    self.loginButton.layer.cornerRadius = 10.0;
+    self.loginButton.layer.borderColor = UIColor.grayColor.CGColor;
+    self.loginButton.layer.borderWidth = 1.0;
+    self.signupButton.layer.cornerRadius = 10.0;
+    self.signupButton.layer.borderColor = UIColor.grayColor.CGColor;
+    self.signupButton.layer.borderWidth = 1.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -184,6 +191,7 @@ const CGFloat kCellHeight = 44.0;
     LoanEnquiry *enquiry = self.enquiries[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"Loan amount: %@", enquiry.loanAmount];
     cell.detailTextLabel.text = enquiry.statusString;
+    cell.detailTextLabel.textColor = [self statusColor:enquiry.status];
     
     return cell;
 }
@@ -198,6 +206,26 @@ const CGFloat kCellHeight = 44.0;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.01f;
+}
+
+- (UIColor*)statusColor:(EnquiryStatus)status {
+    switch (status) {
+        case EnquiryStatusPending:
+            return [UIColor colorWithRed:244.0/255.0 green:190.0/255.0 blue:66.0/255.0 alpha:1];
+            break;
+        case EnquiryStatusApproved:
+            return [UIColor colorWithRed:66.0/255.0 green:190.0/255.0 blue:90.0/255.0 alpha:1];
+            break;
+        case EnquiryStatusRejected:
+            return [UIColor redColor];
+            break;
+        case EnquiryStatusCancelled:
+            return [UIColor lightGrayColor];
+            break;
+        default:
+            return [UIColor lightGrayColor];
+            break;
+    }
 }
 
 @end

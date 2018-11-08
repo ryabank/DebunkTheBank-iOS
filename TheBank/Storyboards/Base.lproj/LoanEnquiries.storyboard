@@ -19,6 +19,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qxz-QF-NKw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Fd3-Sr-NHk" kind="relationship" relationship="rootViewController" id="C8O-GQ-vJj"/>
@@ -36,6 +37,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MOf-TE-9wA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-RB-uMc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,18 +70,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxv-cl-ep8">
-                                <rect key="frame" x="157.5" y="231" width="60" height="42"/>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxv-cl-ep8">
+                                <rect key="frame" x="146.5" y="221" width="82" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="  Login  "/>
                                 <connections>
                                     <action selector="loginButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="SLB-dK-Egc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-Xp-fSm" userLabel="Signup Button">
-                                <rect key="frame" x="149" y="276" width="76" height="42"/>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-Xp-fSm" userLabel="Signup Button">
+                                <rect key="frame" x="138" y="291" width="98" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Signup"/>
+                                <state key="normal" title="  Signup  "/>
                                 <connections>
                                     <action selector="signupButtonClicked:" destination="Fd3-Sr-NHk" eventType="touchUpInside" id="HuU-q0-rEq"/>
                                 </connections>
@@ -85,13 +91,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="20" id="Hv9-Oy-y0q"/>
+                            <constraint firstItem="Z3h-m6-GLO" firstAttribute="trailing" secondItem="MOf-TE-9wA" secondAttribute="trailing" id="9ST-iw-Zfb"/>
+                            <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="35" id="Hv9-Oy-y0q"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="Jw8-Ao-pof"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="y7b-RB-uMc" secondAttribute="bottom" id="R6X-1K-Kwo"/>
                             <constraint firstItem="rxv-cl-ep8" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="fQe-3z-pb1"/>
+                            <constraint firstItem="MOf-TE-9wA" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="gLZ-yw-jnM"/>
                             <constraint firstItem="y7b-RB-uMc" firstAttribute="top" secondItem="Z3h-m6-GLO" secondAttribute="top" id="k8d-TH-Yk5"/>
-                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="-25" id="kvR-wo-LiG"/>
+                            <constraint firstItem="rxv-cl-ep8" firstAttribute="centerY" secondItem="Z3h-m6-GLO" secondAttribute="centerY" constant="-35" id="kvR-wo-LiG"/>
                             <constraint firstItem="Fvh-Xp-fSm" firstAttribute="centerX" secondItem="Z3h-m6-GLO" secondAttribute="centerX" id="tBb-8Q-CdJ"/>
+                            <constraint firstItem="MOf-TE-9wA" firstAttribute="leading" secondItem="Z3h-m6-GLO" secondAttribute="leading" id="uwn-j3-Yfs"/>
+                            <constraint firstItem="Z3h-m6-GLO" firstAttribute="bottom" secondItem="MOf-TE-9wA" secondAttribute="bottom" id="v2s-a5-HGU"/>
                             <constraint firstItem="Z3h-m6-GLO" firstAttribute="trailing" secondItem="y7b-RB-uMc" secondAttribute="trailing" id="wgl-rE-uBO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3h-m6-GLO"/>
@@ -284,6 +294,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="600" height="313"/>
         <image name="loanListIcon" width="25" height="25"/>
         <image name="newLoadIcon" width="25" height="25"/>
     </resources>
