@@ -91,7 +91,7 @@ static NSString * const kLoanToAddressKey = @"loanToAddress";
     [self getEntriesFromChild:kLoansKey appearingInChildQuery:query completion:^(NSArray<FIRDataSnapshot *> *snapshots) {
         NSMutableArray<LoanEnquiry*> *enquiries = [[NSMutableArray alloc] init];
         
-        for (FIRDataSnapshot *snapshot in snapshots) {
+        for (FIRDataSnapshot *snapshot in snapshots.reverseObjectEnumerator) {
             NSLog(@"%@", snapshot);
             LoanEnquiry *enquiry = [[LoanEnquiry alloc] init];
             enquiry.identifier = [NSString stringWithFormat:@"%@", snapshot.value[kIdentifierKey]];
