@@ -24,10 +24,11 @@
 - (void)loginEmail:(NSString*)email password:(NSString*)password;
 - (void)signupEmail:(NSString*)email password:(NSString*)password;
 
-- (void)newEnquiry;
 - (void)createEnquiryForAddress:(NSString*)address amount:(NSString*)amount andDuration:(NSString*)duration;
 
 - (void)selectEnquiryWithIdentifier:(NSString*)identifier;
+
+- (void)refreshEnquiries;
 
 @end
 

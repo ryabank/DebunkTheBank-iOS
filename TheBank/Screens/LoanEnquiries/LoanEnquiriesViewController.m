@@ -40,11 +40,19 @@
     
     self.loansTableView.dataSource = self;
     self.loansTableView.delegate = self;
+    UIImageView *tableViewBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"liberBankLogo"]];
+    tableViewBackground.contentMode = UIViewContentModeScaleAspectFit;
+    tableViewBackground.alpha = 0.05;
+    self.loansTableView.backgroundView = tableViewBackground;
     
     self.presenter = [[LoanEnquiriesViewPresenter alloc] initWithView:self];
     LoanServiceFirebase *service = [LoanServiceFirebase sharedService];
     self.presenter.loanService = service;
     self.presenter.authService = [AuthServiceFirebase sharedService];
+    
+    UIRefreshControl *refreshControler = [[UIRefreshControl alloc] init];
+    [refreshControler addTarget:self.presenter action:@selector(refreshEnquiries) forControlEvents:UIControlEventValueChanged];
+    self.loansTableView.refreshControl = refreshControler;
     
     self.loginButton.layer.cornerRadius = 5.0;
     self.loginButton.layer.borderColor = UIColor.grayColor.CGColor;
@@ -75,10 +83,6 @@
 }
 */
 
-- (IBAction)addEnquiryButtonClicked:(id)sender {
-    [self.presenter newEnquiry];
-}
-
 - (IBAction)loginButtonClicked:(id)sender {
     [self.presenter loginButton];
 }
@@ -93,11 +97,8 @@
 
 #pragma mark LoanEnquiriesViewProtocol methods
 
-- (void)displayLoanEnquiryForm {
-    
-}
-
 - (void)displayLoanEnquiries:(NSArray<LoanEnquiry *> *)enquiries {
+    [self.loansTableView.refreshControl endRefreshing];
     self.enquiries = enquiries;
     [self.loansTableView reloadData];
 }

@@ -23,6 +23,12 @@
     return self;
 }
 
+- (void)loadEnquiriesAndRefresh {
+    [self.loanService requestLoanEnquiries:^(NSArray<LoanEnquiry *> *enquiries) {
+        [self.view displayLoanEnquiries:enquiries];
+    }];
+}
+
 #pragma mark LoanEnquiriesViewPresenterProtocol methods
 
 @synthesize loanService;
@@ -31,9 +37,7 @@
 - (void)viewWillAppear {
     if (self.authService.isLoggedIn) {
         [self.view showLoggedInState];
-        [self.loanService requestLoanEnquiries:^(NSArray<LoanEnquiry *> *enquiries) {
-            [self.view displayLoanEnquiries:enquiries];
-        }];
+        [self loadEnquiriesAndRefresh];
     }
     else {
         [self.view showEmptyState];
@@ -42,10 +46,6 @@
 
 - (void)viewWillDisappear {
     
-}
-
-- (void)newEnquiry {
-    [self.view displayLoanEnquiryForm];
 }
 
 - (void)createEnquiryForAddress:(NSString*)address amount:(NSString*)amount andDuration:(NSString*)duration {
@@ -76,9 +76,7 @@
         }
         
         [self.view showLoggedInState];
-        [self.loanService requestLoanEnquiries:^(NSArray<LoanEnquiry *> *enquiries) {
-            [self.view displayLoanEnquiries:enquiries];
-        }];
+        [self loadEnquiriesAndRefresh];
     }];
 }
 
@@ -100,10 +98,12 @@
             return;
         }
         
-        [self.loanService requestLoanEnquiries:^(NSArray<LoanEnquiry *> *enquiries) {
-            [self.view displayLoanEnquiries:enquiries];
-        }];
+        [self loadEnquiriesAndRefresh];
     }];
+}
+
+- (void)refreshEnquiries {
+    [self loadEnquiriesAndRefresh];
 }
 
 @end
