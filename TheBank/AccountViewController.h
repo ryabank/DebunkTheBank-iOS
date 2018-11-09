@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  AccountViewController.h
 //  TheBank
 //
 //  Created by Debunk on 07/11/2018.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface AccountViewController : UIViewController
 
 
 @end

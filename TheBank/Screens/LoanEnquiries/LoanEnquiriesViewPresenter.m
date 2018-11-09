@@ -66,6 +66,7 @@
 - (void)logoutButton {
     [self.authService logout];
     [self.view showEmptyState];
+    [self loadEnquiriesAndRefresh];
 }
 
 - (void)loginEmail:(NSString*)email password:(NSString*)password {

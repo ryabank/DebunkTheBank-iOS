@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224921937F4B00EAC698 /* AppDelegate.m */; };
 		7917224D21937F4B00EAC698 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224C21937F4B00EAC698 /* FirstViewController.m */; };
-		7917225021937F4B00EAC698 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224F21937F4B00EAC698 /* SecondViewController.m */; };
+		7917225021937F4B00EAC698 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7917224F21937F4B00EAC698 /* AccountViewController.m */; };
 		7917225321937F4B00EAC698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917225121937F4B00EAC698 /* Main.storyboard */; };
 		7917225521937F4E00EAC698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7917225421937F4E00EAC698 /* Assets.xcassets */; };
 		7917225821937F4E00EAC698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7917225621937F4E00EAC698 /* LaunchScreen.storyboard */; };
@@ -64,8 +64,8 @@
 		7917224921937F4B00EAC698 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7917224B21937F4B00EAC698 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		7917224C21937F4B00EAC698 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		7917224E21937F4B00EAC698 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		7917224F21937F4B00EAC698 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7917224E21937F4B00EAC698 /* AccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		7917224F21937F4B00EAC698 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		7917225221937F4B00EAC698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7917225421937F4E00EAC698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7917225721937F4E00EAC698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 				7917224921937F4B00EAC698 /* AppDelegate.m */,
 				7917224B21937F4B00EAC698 /* FirstViewController.h */,
 				7917224C21937F4B00EAC698 /* FirstViewController.m */,
-				7917224E21937F4B00EAC698 /* SecondViewController.h */,
-				7917224F21937F4B00EAC698 /* SecondViewController.m */,
+				7917224E21937F4B00EAC698 /* AccountViewController.h */,
+				7917224F21937F4B00EAC698 /* AccountViewController.m */,
 				7917225421937F4E00EAC698 /* Assets.xcassets */,
 				7917225621937F4E00EAC698 /* LaunchScreen.storyboard */,
 				7917225921937F4E00EAC698 /* Info.plist */,
@@ -488,7 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7917225021937F4B00EAC698 /* SecondViewController.m in Sources */,
+				7917225021937F4B00EAC698 /* AccountViewController.m in Sources */,
 				7917224A21937F4B00EAC698 /* AppDelegate.m in Sources */,
 				7917227E2193856600EAC698 /* LoanServiceFirebase.m in Sources */,
 				791722B821944AD500EAC698 /* LoanEnquiryTableViewCell.m in Sources */,
